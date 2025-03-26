@@ -10,13 +10,20 @@ form.onsubmit = function (e) {
   console.log("SUBMIT", inputData);
 
   const toDoArea = document.getElementById("toDoArea");
-  const listPoints = document.createElement("li");
+
+  const listPoints = document.createElement("p");
   listPoints.classList.add("listPoint");
   listPoints.innerHTML = `<p>${messageInput.value}</p>`;
 
   const deleteButton = document.createElement("button");
   deleteButton.classList.add("deleteButton");
   deleteButton.innerText = "ELIMINA";
+
+  const line = document.createElement("hr");
+  line.classList.add("line");
+
+  const listBox = document.createElement("div");
+  listBox.classList.add("listBox");
 
   listPoints.onclick = function (e) {
     e.currentTarget.style.textDecoration = "line-through";
@@ -25,8 +32,10 @@ form.onsubmit = function (e) {
   deleteButton.onclick = function (e) {
     listPoints.remove();
     e.currentTarget.remove();
+    line.remove();
   };
-
-  toDoArea.appendChild(listPoints);
-  toDoArea.appendChild(deleteButton);
+  toDoArea.appendChild(listBox);
+  listBox.appendChild(listPoints);
+  listBox.appendChild(deleteButton);
+  listBox.appendChild(line);
 };

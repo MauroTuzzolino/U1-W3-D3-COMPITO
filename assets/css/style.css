@@ -10,7 +10,7 @@ body {
     rgba(193, 217, 217, 1) 35%,
     rgba(255, 255, 255, 1) 100%
   );
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -71,8 +71,65 @@ form label {
 }
 
 form input {
+  font-family: Tektur;
   font-size: 20px;
   border-radius: 5px;
   border: 2px solid black;
   width: 310px;
+  margin: 0;
+}
+
+form div button {
+  font-family: Boldonse;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(0, 86, 86);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#toDoArea {
+  border: 2.5px solid black;
+  background-color: white;
+  max-width: 850px;
+  min-height: 70px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.listBox {
+  width: 90%;
+  margin: auto;
+}
+
+.listPoint {
+  display: inline-block;
+  font-family: Tektur;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.listPoint p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.deleteButton {
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(0, 86, 86);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+  margin: 0px;
+  border: 1px solid black;
 }
