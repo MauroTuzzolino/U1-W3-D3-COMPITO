@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>U1-W3-D3-DOM</title>
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-clipboard-list"></i>
+      <h1>La mia TO-DO LIST</h1>
+
+      <div>
+        <h3>Come funziona:</h3>
+
+        <ol>
+          <li>Scrivi nell'apposita casella, ciò che intendi aggiungere alla tua To-Do-List, e premi sul pulsante per confermare!</li>
+          <li>
+            Una volta aggiunto un punto alla tua To-Do-List potrai segnarlo come completato, cliccandoci sopra, o cancellarlo tramite il pulsante subito alla
+            sua destra!
+          </li>
+        </ol>
+      </div>
+    </header>
+
+    <form>
+      <label for="mainInput">Prossima cosa da fare...</label>
+      <input id="mainInput" type="text" placeholder="...qual'è la prossima cosa da fare?" />
+
+      <button>AGGIUNGI ALLA LISTA</button>
+    </form>
+
+    <ul id="toDoArea"></ul>
+
+    <script src="./assets/JavaScript/script.js"></script>
+  </body>
+</html>

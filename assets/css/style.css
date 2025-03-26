@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(15, 107, 107, 1) 5%,
+    rgba(98, 158, 158, 1) 15%,
+    rgba(167, 208, 208, 1) 25%,
+    rgba(193, 217, 217, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 100vh;
+}
+
+header {
+  margin-left: 50px;
+}
+
+header i {
+  display: inline-block;
+  font-size: 100px;
+}
+
+header h1 {
+  font-family: Boldonse;
+  font-weight: bold;
+  font-size: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header div {
+  margin-bottom: 75px;
+}
+
+header div h3,
+header div ol {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header div h3 {
+  font-family: Boldonse;
+  font-size: 35px;
+  margin: 0px;
+  max-width: 30%;
+}
+
+header div ol {
+  font-family: Tektur;
+  font-size: 25px;
+  max-width: 70%;
+  vertical-align: bottom;
+  margin: 0px;
+  margin-top: 25px;
+}
+
+header div ol li {
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  font-family: Tektur;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+form input {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 310px;
+}
